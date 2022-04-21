@@ -2,3 +2,17 @@ Thu Apr 21 15:38:39 UTC 2022:
  tests:  1|8
 total_score: 0/70
 b55dd62
+Thu Apr 21 15:43:05 UTC 2022: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘createTreeMap’:
+treemap.c:41:33: error: implicit declaration of function ‘size_of’ [-Werror=implicit-function-declaration]
+   TreeMap* map=(TreeMap*)malloc(size_of(TreeMap));
+                                 ^~~~~~~
+treemap.c:41:41: error: expected expression before ‘TreeMap’
+   TreeMap* map=(TreeMap*)malloc(size_of(TreeMap));
+                                         ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+e89c4ca
