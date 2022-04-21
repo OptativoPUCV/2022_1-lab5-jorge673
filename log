@@ -160,3 +160,17 @@ treemap.c:80:10: error: ‘aux’ is a pointer; did you mean to use ‘->’?
           ->
 Compilation failed
 26e1337
+Thu Apr 21 15:55:23 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:78:10: error: statement with no effect [-Werror=unused-value]
+       aux->left;
+       ~~~^~~~~~
+treemap.c:80:10: error: statement with no effect [-Werror=unused-value]
+       aux->right;
+       ~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+76c8c1f
