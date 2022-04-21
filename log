@@ -131,3 +131,17 @@ treemap.c:80:10: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 a1b225e
+Thu Apr 21 15:53:20 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:78:10: error: statement with no effect [-Werror=unused-value]
+       aux->left;
+       ~~~^~~~~~
+treemap.c:80:10: error: statement with no effect [-Werror=unused-value]
+       aux->right;
+       ~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1d3fe80
