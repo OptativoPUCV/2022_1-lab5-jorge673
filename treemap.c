@@ -46,8 +46,8 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
-  printf("error?");
-  /*searchTreeMap(tree,key);
+  searchTreeMap(tree,key);
+  printf("\nsearch:si");
 
   if(tree->root==tree->current)printf("si--------------");
   else printf("no---------");
@@ -65,7 +65,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
       new->parent=aux;
     }
 
-  tree->current=new;*/
+  tree->current=new;
   
 }
 
