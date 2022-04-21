@@ -644,3 +644,62 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 9749a37
+Thu Apr 21 23:42:15 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* aux=tree->current;
+   ^~~~~~~~
+   TreeNode
+treemap.c:51:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* aux=tree->current;
+                 ^~~~
+treemap.c:52:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* new=createTreeNode(key,value);
+   ^~~~~~~~
+   TreeNode
+treemap.c:52:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* new=createTreeNode(key,value);
+                 ^~~~~~~~~~~~~~
+treemap.c:54:30: error: request for member ‘pair’ in something not a structure or union
+   if(tree->lower_than(new,aux->pair->key)){
+                              ^~
+treemap.c:55:11: error: request for member ‘left’ in something not a structure or union
+     if(aux->left==NULL){
+           ^~
+treemap.c:56:10: error: request for member ‘left’ in something not a structure or union
+       aux->left=new;
+          ^~
+treemap.c:57:10: error: request for member ‘parent’ in something not a structure or union
+       new->parent=aux;
+          ^~
+treemap.c:59:32: error: request for member ‘pair’ in something not a structure or union
+   }else if(tree->lower_than(aux->pair->key,new)){
+                                ^~
+treemap.c:60:11: error: request for member ‘right’ in something not a structure or union
+     if(aux->right==NULL){
+           ^~
+treemap.c:61:10: error: request for member ‘right’ in something not a structure or union
+       aux->right=new;
+          ^~
+treemap.c:62:10: error: request for member ‘parent’ in something not a structure or union
+       new->parent=aux;
+          ^~
+treemap.c:65:16: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+   tree->current=new;
+                ^
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b204492
