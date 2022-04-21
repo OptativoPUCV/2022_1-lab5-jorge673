@@ -46,3 +46,22 @@ Thu Apr 21 15:44:37 UTC 2022:
  tests:  4|7
 total_score: 5/70
 a4c7273
+Thu Apr 21 15:51:23 UTC 2022: 
+ treemap.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:75:16: error: ‘Tree’ undeclared (first use in this function); did you mean ‘tree’?
+   TreeNode aux=Tree->root
+                ^~~~
+                tree
+treemap.c:75:16: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:76:3: error: expected ‘,’ or ‘;’ before ‘while’
+   while(aux!=NULL){
+   ^~~~~
+treemap.c:75:12: error: unused variable ‘aux’ [-Werror=unused-variable]
+   TreeNode aux=Tree->root
+            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+028d9cf
