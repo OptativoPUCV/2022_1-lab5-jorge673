@@ -48,8 +48,8 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
   searchTreeMap(tree,key);
 
-  if(tree->root==tree->current)printf("si");
-  else printf("no");
+  if(tree->root==tree->current)printf("si--------------");
+  else printf("no---------");
   TreeNode * aux = tree->current;
   TreeNode * new = createTreeNode(key,value);
 
