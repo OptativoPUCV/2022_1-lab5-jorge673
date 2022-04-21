@@ -192,3 +192,61 @@ Thu Apr 21 15:58:57 UTC 2022:
  tests:  11|6
 total_score: 15/70
 a39515c
+Thu Apr 21 16:20:43 UTC 2022: 
+ treemap.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:49:43: error: ‘return’ with a value, in function returning void [-Werror]
+   if(searchTreeMap(tree,key)==NULL)return NULL;
+                                           ^~~~
+treemap.c:48:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c:51:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* new=createTreeNode(key,value);
+   ^~~~~~~~
+   TreeNode
+treemap.c:51:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* new=createTreeNode(key,value);
+                 ^~~~~~~~~~~~~~
+treemap.c:52:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* aux=tree->root;
+   ^~~~~~~~
+   TreeNode
+treemap.c:52:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* aux=tree->root;
+                 ^~~~
+treemap.c:55:32: error: request for member ‘pair’ in something not a structure or union
+     if(tree->lower_than(new,aux->pair->key)){
+                                ^~
+treemap.c:56:13: error: request for member ‘left’ in something not a structure or union
+       if(aux->left==NULL){
+             ^~
+treemap.c:57:12: error: request for member ‘left’ in something not a structure or union
+         aux->left=new;
+            ^~
+treemap.c:59:16: error: request for member ‘left’ in something not a structure or union
+         aux=aux->left;
+                ^~
+treemap.c:61:34: error: request for member ‘pair’ in something not a structure or union
+     }else if(tree->lower_than(aux->pair->key,new)){
+                                  ^~
+treemap.c:62:13: error: request for member ‘right’ in something not a structure or union
+       if(aux->right==NULL){
+             ^~
+treemap.c:63:12: error: request for member ‘right’ in something not a structure or union
+         aux->right=new;
+            ^~
+treemap.c:65:16: error: request for member ‘right’ in something not a structure or union
+         aux=aux->right;
+                ^~
+treemap.c:68:20: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       tree->current=new;
+                    ^
+treemap.c:69:17: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+       tree->root=new;
+                 ^
+cc1: all warnings being treated as errors
+Compilation failed
+04a21c3
