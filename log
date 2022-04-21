@@ -388,3 +388,80 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 3a89467
+Thu Apr 21 22:57:04 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:49:43: error: ‘return’ with a value, in function returning void [-Werror]
+   if(searchTreeMap(tree,key)==NULL)return NULL;
+                                           ^~~~
+treemap.c:48:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c:51:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* new=createTreeNode(key,value);
+   ^~~~~~~~
+   TreeNode
+treemap.c:51:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* new=createTreeNode(key,value);
+                 ^~~~~~~~~~~~~~
+treemap.c:54:15: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     tree->root=new;
+               ^
+treemap.c:55:18: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+     tree->current=new;
+                  ^
+treemap.c:56:12: error: ‘return’ with a value, in function returning void [-Werror]
+     return 1;
+            ^
+treemap.c:48:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c:59:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* aux=tree->root;
+   ^~~~~~~~
+   TreeNode
+treemap.c:59:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* aux=tree->root;
+                 ^~~~
+treemap.c:62:28: error: request for member ‘pair’ in something not a structure or union
+     if(tree->lower_than(new->pair->key,aux->pair->key)){
+                            ^~
+treemap.c:62:43: error: request for member ‘pair’ in something not a structure or union
+     if(tree->lower_than(new->pair->key,aux->pair->key)){
+                                           ^~
+treemap.c:63:13: error: request for member ‘left’ in something not a structure or union
+       if(aux->left==NULL){
+             ^~
+treemap.c:64:12: error: request for member ‘parent’ in something not a structure or union
+         new->parent=aux;
+            ^~
+treemap.c:65:12: error: request for member ‘left’ in something not a structure or union
+         aux->left=new;
+            ^~
+treemap.c:66:22: error: assignment from incompatible pointer type [-Werror=incompatible-pointer-types]
+         tree->current=new;
+                      ^
+treemap.c:67:16: error: ‘return’ with a value, in function returning void [-Werror]
+         return 1;
+                ^
+treemap.c:48:6: note: declared here
+ void insertTreeMap(TreeMap * tree, void* key, void * value) {
+      ^~~~~~~~~~~~~
+treemap.c:69:16: error: request for member ‘left’ in something not a structure or union
+         aux=aux->left;
+                ^~
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+963724a
