@@ -575,3 +575,31 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 cca902f
+Thu Apr 21 23:40:54 UTC 2022: 
+ treemap.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:3: error: expected ‘;’ before ‘treeNode’
+   treeNode* aux=tree->current
+   ^~~~~~~~
+treemap.c:54:23: error: ‘new’ undeclared (first use in this function)
+   if(tree->lower_than(new,aux->pair->key)){
+                       ^~~
+treemap.c:54:23: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:54:27: error: ‘aux’ undeclared (first use in this function)
+   if(tree->lower_than(new,aux->pair->key)){
+                           ^~~
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cb105c4
