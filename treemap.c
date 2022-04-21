@@ -49,6 +49,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   searchTreeMap(tree,key);
 
   if(tree->root==tree->current)printf("si");
+  else printf("no");
   TreeNode * aux = tree->current;
   TreeNode * new = createTreeNode(key,value);
 
