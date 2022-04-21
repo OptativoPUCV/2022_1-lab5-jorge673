@@ -114,3 +114,20 @@ treemap.c:82:17: error: invalid type argument of ‘->’ (have ‘TreeNode {aka
 cc1: all warnings being treated as errors
 Compilation failed
 4acb4f8
+Thu Apr 21 15:52:45 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:8: error: implicit declaration of function ‘lower_than’ [-Werror=implicit-function-declaration]
+     if(lower_than(key,aux->pair->key)){
+        ^~~~~~~~~~
+treemap.c:78:10: error: statement with no effect [-Werror=unused-value]
+       aux->left;
+       ~~~^~~~~~
+treemap.c:80:10: error: statement with no effect [-Werror=unused-value]
+       aux->right;
+       ~~~^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a1b225e
