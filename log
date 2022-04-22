@@ -918,3 +918,15 @@ treemap.c:50:13: error: initialization makes integer from pointer without a cast
 cc1: all warnings being treated as errors
 Compilation failed
 f1f0b14
+Fri Apr 22 23:12:33 UTC 2022: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:51:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int *’ [-Werror=format=]
+   printf("%d",clave);
+           ~^
+           %ls
+cc1: all warnings being treated as errors
+Compilation failed
+7d8e8ef
