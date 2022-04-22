@@ -843,3 +843,17 @@ treemap.c:49:12: error: unused variable ‘old’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 54c0e8b
+Fri Apr 22 23:07:53 UTC 2022: 
+ treemap.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:49:16: error: invalid initializer
+   TreeNode old=tree->current;
+                ^~~~
+treemap.c:49:12: error: unused variable ‘old’ [-Werror=unused-variable]
+   TreeNode old=tree->current;
+            ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+ce4a8b2
