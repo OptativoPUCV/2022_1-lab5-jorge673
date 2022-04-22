@@ -50,7 +50,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   searchTreeMap(tree,key);
   TreeNode* aux=tree->current;
 
-  if(aux==old)printf("\nNOOOOOOO");
+  if(aux==old)printf("\nNOOO");
   else printf("\nSIUUUUUUUUUUUU");
   tree->current=tree->root;
 }
