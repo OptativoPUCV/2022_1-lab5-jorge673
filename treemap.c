@@ -46,13 +46,17 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
-  TreeNode* old=tree->current;
-  searchTreeMap(tree,key);
   TreeNode* aux=tree->current;
+  TreeNode* nuevo=createTreeNode(tree,value);
+  
+  while(aux!=NULL){
+    if(tree->lower_than(key,aux->pair->key)){
+      printf("izquerda\n");
+    }else if(tree->lower_than(aux->pair->key,key)){
+      printf("derecha\n");
+  }
+  
 
-  if(aux==old)printf("\nNOOO");
-  else printf("\nSIUUUUUUUUUUUU");
-  tree->current=tree->root;
 }
 
 TreeNode * minimum(TreeNode * x){

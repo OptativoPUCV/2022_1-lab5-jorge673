@@ -1004,3 +1004,24 @@ Fri Apr 22 23:19:15 UTC 2022:
  tests:  11|6
 total_score: 15/70
 5083c03
+Fri Apr 22 23:22:55 UTC 2022: 
+ treemap.c | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+test.c: In function ‘insertTreeMap’:
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+ }
+ ^
+In file included from test.c:4:0:
+treemap.c:50:13: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+   TreeNode* nuevo=createTreeNode(tree,value);
+             ^~~~~
+At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+ int main( int argc, char *argv[] ) {
+     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+28fcd3a
