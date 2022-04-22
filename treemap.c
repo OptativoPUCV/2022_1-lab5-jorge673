@@ -53,9 +53,6 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   if(aux->left==NULL){
     return;
   }
-  if(aux->right==NULL){
-    return;
-  }
   
 
 }
