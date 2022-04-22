@@ -51,10 +51,10 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   //TreeNode* nuevo=createTreeNode(tree,value);
 
   if(aux->left==NULL){
-    return 1;
+    return;
   }
   if(aux->right==NULL){
-    return 1;
+    return;
   }
   
 
