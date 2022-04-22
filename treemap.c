@@ -49,7 +49,13 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   searchTreeMap(tree,key);
   TreeNode* aux=tree->current;
   TreeNode* nuevo=createTreeNode(tree,value);
-  
+
+  if(aux->left==NULL){
+    printf("AAAAAAAA")
+  }
+  if(aux->right==NULL){
+    printf("EEEEEEEE")
+  }
   
 
 }

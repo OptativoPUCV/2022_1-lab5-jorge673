@@ -1067,3 +1067,20 @@ treemap.c:50:13: error: unused variable ‘aux’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 d3e5fc4
+Fri Apr 22 23:27:20 UTC 2022: 
+ treemap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:55:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+treemap.c:58:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+treemap.c:51:13: error: unused variable ‘nuevo’ [-Werror=unused-variable]
+   TreeNode* nuevo=createTreeNode(tree,value);
+             ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+32d9e90
