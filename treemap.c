@@ -46,27 +46,6 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
-  searchTreeMap(tree,key);
-  printf("\nsearch:si");
-
-  if(tree->root==tree->current)printf("si--------------");
-  else printf("no---------");
-  TreeNode * aux = tree->current;
-  TreeNode * new = createTreeNode(key,value);
-
-  if(tree->lower_than(new,aux->pair->key)){
-    if(aux->left==NULL){
-      aux->left=new;
-      new->parent=aux;
-    }
-  }else if(tree->lower_than(aux->pair->key,new)){
-    if(aux->right==NULL){
-      aux->right=new;
-      new->parent=aux;
-    }
-
-  tree->current=new;
-  
 }
 
 TreeNode * minimum(TreeNode * x){
