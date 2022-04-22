@@ -47,7 +47,7 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
   TreeNode* aux=tree->current;
-  printf("%p",aux->pair->value);
+  printf("%s",aux->pair->value);
 }
 
 TreeNode * minimum(TreeNode * x){
