@@ -52,7 +52,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
 
   if(aux==old)printf("\nNOOOOOOO");
   else printf("\nSIUUUUUUUUUUUU");
-  tree->current=old;
+  tree->current=tree->root;
 }
 
 TreeNode * minimum(TreeNode * x){
