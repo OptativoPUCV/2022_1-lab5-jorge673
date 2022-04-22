@@ -54,6 +54,7 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
       printf("izquerda\n");
     }else if(tree->lower_than(aux->pair->key,nuevo->pair->key)){
       printf("derecha\n");
+    }
 
   }
   
