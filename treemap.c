@@ -50,10 +50,11 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   TreeNode* nuevo=createTreeNode(tree,value);
   
   while(aux!=NULL){
-    if(tree->lower_than(key,aux->pair->key)){
+    if(tree->lower_than(nuevo->pair->key,aux->pair->key)){
       printf("izquerda\n");
-    }else if(tree->lower_than(aux->pair->key,key)){
+    }else if(tree->lower_than(aux->pair->key,nuevo->pair->key)){
       printf("derecha\n");
+
   }
   
 
