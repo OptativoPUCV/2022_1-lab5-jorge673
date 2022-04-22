@@ -935,3 +935,15 @@ Fri Apr 22 23:12:42 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 b8633a4
+Fri Apr 22 23:13:18 UTC 2022: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:50:12: error: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘void *’ [-Werror=format=]
+   printf("%d",aux->pair->key);
+           ~^  ~~~~~~~~~~~~~~
+           %p
+cc1: all warnings being treated as errors
+Compilation failed
+dd3ad11
