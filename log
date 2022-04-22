@@ -889,3 +889,21 @@ treemap.c:49:11: error: initialization makes integer from pointer without a cast
 cc1: all warnings being treated as errors
 Compilation failed
 55ef7da
+Fri Apr 22 23:11:13 UTC 2022: 
+ treemap.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:49:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+   treeNode* aux=tree->current;
+   ^~~~~~~~
+   TreeNode
+treemap.c:49:17: error: initialization from incompatible pointer type [-Werror=incompatible-pointer-types]
+   treeNode* aux=tree->current;
+                 ^~~~
+treemap.c:50:16: error: request for member ‘pair’ in something not a structure or union
+   int clave=aux->pair->key;
+                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+db96d25
