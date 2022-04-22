@@ -800,3 +800,13 @@ Fri Apr 22 23:01:38 UTC 2022:
  tests:  11|6
 total_score: 15/70
 e6f41e5
+Fri Apr 22 23:02:12 UTC 2022: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:50:1: error: expected ‘;’ before ‘}’ token
+ }
+ ^
+Compilation failed
+d63e3e4
