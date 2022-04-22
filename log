@@ -1112,3 +1112,14 @@ Fri Apr 22 23:29:17 UTC 2022:
  1 file changed, 1 insertion(+), 1 deletion(-)
  tests:  0|0
 2a725dc
+Fri Apr 22 23:29:35 UTC 2022: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function ‘insertTreeMap’:
+treemap.c:50:13: error: unused variable ‘aux’ [-Werror=unused-variable]
+   TreeNode* aux=tree->current;
+             ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+fc786c6

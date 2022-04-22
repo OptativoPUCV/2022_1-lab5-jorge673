@@ -50,12 +50,12 @@ void insertTreeMap(TreeMap * tree, void* key, void * value) {
   TreeNode* aux=tree->current;
   //TreeNode* nuevo=createTreeNode(tree,value);
 
-  if(aux->left==NULL){
+  /*if(aux->left==NULL){
     printf("AAAAAAAA");
   }
   if(aux->right==NULL){
     printf("EEEEEEEE");
-  }
+  }*/
   
 
 }
