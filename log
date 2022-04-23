@@ -308,3 +308,14 @@ sá., 23 de abr. de 2022 14:13:28:
  1 file changed, 2 insertions(+), 1 deletion(-)
  tests:  0|0
 60b2452
+sá., 23 de abr. de 2022 14:19:46: 
+ treemap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:52:13: error: unused variable 'node' [-Werror=unused-variable]
+   TreeNode* node=tree->current;
+             ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6767d00
