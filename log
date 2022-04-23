@@ -363,3 +363,14 @@ sá., 23 de abr. de 2022 14:42:58:
  1 file changed, 4 insertions(+), 10 deletions(-)
  tests:  0|0
 1e60340
+sá., 23 de abr. de 2022 14:43:57: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:56:7: error: statement with no effect [-Werror=unused-value]
+   node->parent;
+   ~~~~^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+506e23f
