@@ -94,6 +94,8 @@ Pair * searchTreeMap(TreeMap * tree, void* key) {
       tree->current=aux;
       return aux->pair;
     }
+    if(aux==NULL)puts("si");
+    else puts("no");
   } 
   tree->current=aux;
   return NULL;
