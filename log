@@ -440,3 +440,21 @@ sá., 23 de abr. de 2022 14:55:10:
  tests:  11|6
 total_score: 20/70
 4b0ee4f
+sá., 23 de abr. de 2022 18:10:36: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'minimum':
+treemap.c:76:3: error: expected ';' before '}' token
+   }
+   ^
+treemap.c: In function 'eraseTreeMap':
+treemap.c:91:28: error: 'd' undeclared (first use in this function)
+     removeNode(tree, node);d
+                            ^
+treemap.c:91:28: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:93:1: error: expected ';' before '}' token
+ }
+ ^
+Compilation failed
+b6e071b
