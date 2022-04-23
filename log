@@ -292,3 +292,14 @@ treemap.c:51:12: error: format '%d' expects argument of type 'int', but argument
 cc1.exe: all warnings being treated as errors
 Compilation failed
 e71924b
+sá., 23 de abr. de 2022 14:12:44: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:51:12: error: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Werror=format=]
+   printf("%d",&key2);
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a6f12d5
