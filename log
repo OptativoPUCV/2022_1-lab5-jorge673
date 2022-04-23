@@ -385,3 +385,8 @@ treemap.c:56:13: error: unused variable 'pa' [-Werror=unused-variable]
 cc1.exe: all warnings being treated as errors
 Compilation failed
 be73d69
+sá., 23 de abr. de 2022 14:45:13: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+7654c09
