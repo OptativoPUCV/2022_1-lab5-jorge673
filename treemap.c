@@ -48,7 +48,7 @@ TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 void insertTreeMap(TreeMap * tree, void* key, void * value) {
   Pair* current=searchTreeMap(tree,key);
   int* key2=current->key;
-  printf("%d",&key2);
+  printf("%d",key2);
   
 }
 
