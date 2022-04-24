@@ -491,3 +491,14 @@ sá., 23 de abr. de 2022 18:27:14:
  tests:  13|5
 total_score: 20/70
 85867ba
+do., 24 de abr. de 2022 14:17:53: 
+ treemap.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:103:11: error: statement with no effect [-Werror=unused-value]
+       node==NULL;
+           ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f4b392e
