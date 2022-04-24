@@ -109,6 +109,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }else{
       TreeNode* son=node->right;
       son=minimum(son);
+      eraseTreeMap(tree,son->pair->key);
       node->left->parent=son;
       node->right->parent=son;
       son->left=node->left;
