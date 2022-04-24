@@ -105,6 +105,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       }
       
     }else{
+      puts("nodo izquierdo tiene 2 hijos");
       TreeNode* son=node->right;
       son=minimum(son);
       node->parent->left=son;
@@ -130,6 +131,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       }
       
     }else{
+      puts("nodo derecho tiene 2 hijos");
       TreeNode* son=node->right;
       son=minimum(son);
       node->parent->right=son;
