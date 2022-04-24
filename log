@@ -1195,3 +1195,9 @@ Fri Apr 22 23:32:26 UTC 2022:
  1 file changed, 1 deletion(-)
  tests:  0|0
 dcdf5de
+Sun Apr 24 21:45:29 UTC 2022: 
+ treemap.c | 123 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++---
+ 1 file changed, 118 insertions(+), 5 deletions(-)
+ tests:  18|3
+total_score: 40/70
+684ffe3
