@@ -250,17 +250,27 @@ treemap.c:69:17: error: assignment from incompatible pointer type [-Werror=incom
 cc1: all warnings being treated as errors
 Compilation failed
 04a21c3
+<<<<<<< HEAD
 Thu Apr 21 22:47:21 UTC 2022: 
  treemap.c | 2 ++
  1 file changed, 2 insertions(+)
 In file included from test.c:4:0:
 treemap.c: In function ‘insertTreeMap’:
 treemap.c:49:43: error: ‘return’ with a value, in function returning void [-Werror]
+=======
+sá., 23 de abr. de 2022 13:07:09: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:49:43: error: 'return' with a value, in function returning void [-Werror]
+>>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
    if(searchTreeMap(tree,key)==NULL)return NULL;
                                            ^~~~
 treemap.c:48:6: note: declared here
  void insertTreeMap(TreeMap * tree, void* key, void * value) {
       ^~~~~~~~~~~~~
+<<<<<<< HEAD
 treemap.c:51:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
    treeNode* new=createTreeNode(key,value);
    ^~~~~~~~
@@ -1201,3 +1211,419 @@ Sun Apr 24 21:45:29 UTC 2022:
  tests:  18|3
 total_score: 40/70
 684ffe3
+=======
+cc1.exe: all warnings being treated as errors
+Compilation failed
+0f57fe3
+sá., 23 de abr. de 2022 13:09:19: 
+ treemap.c | 23 -----------------------
+ 1 file changed, 23 deletions(-)
+ tests:  9|7
+total_score: 10/70
+67d9eb4
+sá., 23 de abr. de 2022 14:11:57: 
+ treemap.c | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:51:12: error: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Werror=format=]
+   printf("%d",&key2);
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+52a4bc6
+sá., 23 de abr. de 2022 14:12:15: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:51:12: error: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Werror=format=]
+   printf("%d",key2);
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e71924b
+sá., 23 de abr. de 2022 14:12:44: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:51:12: error: format '%d' expects argument of type 'int', but argument 2 has type 'int **' [-Werror=format=]
+   printf("%d",&key2);
+            ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a6f12d5
+sá., 23 de abr. de 2022 14:13:28: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+60b2452
+sá., 23 de abr. de 2022 14:19:46: 
+ treemap.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:52:13: error: unused variable 'node' [-Werror=unused-variable]
+   TreeNode* node=tree->current;
+             ^~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+6767d00
+sá., 23 de abr. de 2022 14:23:27: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ tests:  9|7
+total_score: 10/70
+d86f4a5
+sá., 23 de abr. de 2022 14:24:31: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|7
+total_score: 10/70
+2d3ea41
+sá., 23 de abr. de 2022 14:25:43: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  9|7
+total_score: 10/70
+08f8476
+sá., 23 de abr. de 2022 14:26:35: 
+ treemap.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ tests:  9|7
+total_score: 10/70
+a65be3f
+sá., 23 de abr. de 2022 14:33:50: 
+ treemap.c | 15 +++------------
+ 1 file changed, 3 insertions(+), 12 deletions(-)
+ tests:  0|0
+92ac7ec
+sá., 23 de abr. de 2022 14:35:40: 
+ treemap.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  0|0
+959c09c
+sá., 23 de abr. de 2022 14:38:29: 
+ treemap.c | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+ tests:  0|0
+dbe137b
+sá., 23 de abr. de 2022 14:42:58: 
+ treemap.c | 14 ++++----------
+ 1 file changed, 4 insertions(+), 10 deletions(-)
+ tests:  0|0
+1e60340
+sá., 23 de abr. de 2022 14:43:57: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:56:7: error: statement with no effect [-Werror=unused-value]
+   node->parent;
+   ~~~~^~~~~~~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+506e23f
+sá., 23 de abr. de 2022 14:44:42: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:56:13: error: unused variable 'pa' [-Werror=unused-variable]
+   TreeNode* pa=node->parent;
+             ^~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+be73d69
+sá., 23 de abr. de 2022 14:45:13: 
+ treemap.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  0|0
+7654c09
+sá., 23 de abr. de 2022 14:49:53: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  0|0
+31dbaa5
+sá., 23 de abr. de 2022 14:51:00: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|7
+total_score: 10/70
+8fce245
+sá., 23 de abr. de 2022 14:51:57: 
+ treemap.c | 17 ++++++++++-------
+ 1 file changed, 10 insertions(+), 7 deletions(-)
+ tests:  9|7
+total_score: 10/70
+ddc9ebf
+sá., 23 de abr. de 2022 14:52:50: 
+ treemap.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+ tests:  9|7
+total_score: 10/70
+2442bf8
+sá., 23 de abr. de 2022 14:53:52: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  9|7
+total_score: 10/70
+94c9503
+sá., 23 de abr. de 2022 14:54:39: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'insertTreeMap':
+treemap.c:51:28: error: value computed is not used [-Werror=unused-value]
+   searchTreeMap(tree, key) == NULL);
+                            ^
+treemap.c:51:35: error: expected ';' before ')' token
+   searchTreeMap(tree, key) == NULL);
+                                   ^
+treemap.c:51:35: error: expected statement before ')' token
+cc1.exe: all warnings being treated as errors
+Compilation failed
+a56833f
+sá., 23 de abr. de 2022 14:55:10: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|6
+total_score: 20/70
+4b0ee4f
+sá., 23 de abr. de 2022 18:10:36: 
+ treemap.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'minimum':
+treemap.c:76:3: error: expected ';' before '}' token
+   }
+   ^
+treemap.c: In function 'eraseTreeMap':
+treemap.c:91:28: error: 'd' undeclared (first use in this function)
+     removeNode(tree, node);d
+                            ^
+treemap.c:91:28: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:93:1: error: expected ';' before '}' token
+ }
+ ^
+Compilation failed
+b6e071b
+sá., 23 de abr. de 2022 18:10:56: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:0:
+treemap.c: In function 'minimum':
+treemap.c:76:3: error: expected ';' before '}' token
+   }
+   ^
+Compilation failed
+26868af
+sá., 23 de abr. de 2022 18:25:48: 
+ treemap.c | 5 -----
+ 1 file changed, 5 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'minimum':
+treemap.c:71:13: error: unused variable 'aux' [-Werror=unused-variable]
+   TreeNode* aux=x;
+             ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+e9bf3ac
+sá., 23 de abr. de 2022 18:26:29: 
+ treemap.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+ tests:  11|6
+total_score: 20/70
+e4deef9
+sá., 23 de abr. de 2022 18:27:14: 
+ treemap.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+ tests:  13|5
+total_score: 20/70
+85867ba
+do., 24 de abr. de 2022 14:17:53: 
+ treemap.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:103:11: error: statement with no effect [-Werror=unused-value]
+       node==NULL;
+           ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+f4b392e
+do., 24 de abr. de 2022 14:18:07: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|5
+total_score: 20/70
+cfb6f32
+do., 24 de abr. de 2022 14:20:42: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|5
+total_score: 20/70
+841bc6d
+do., 24 de abr. de 2022 14:43:13: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|5
+total_score: 20/70
+6582539
+do., 24 de abr. de 2022 14:43:59: 
+ treemap.c | 13 -------------
+ 1 file changed, 13 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:90:13: error: unused variable 'aux' [-Werror=unused-variable]
+   TreeNode* aux=NULL;
+             ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+5e203a4
+do., 24 de abr. de 2022 14:44:21: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  13|5
+total_score: 20/70
+30bc411
+do., 24 de abr. de 2022 15:19:12: 
+ treemap.c | 23 ++++++++++++++++++++---
+ 1 file changed, 20 insertions(+), 3 deletions(-)
+ tests:  14|5
+total_score: 25/70
+d9e77d9
+do., 24 de abr. de 2022 15:19:42: 
+ treemap.c | 2 --
+ 1 file changed, 2 deletions(-)
+ tests:  14|5
+total_score: 25/70
+c3f38b3
+do., 24 de abr. de 2022 15:21:32: 
+ treemap.c | 19 +++++++++++++++++++
+ 1 file changed, 19 insertions(+)
+ tests:  0|0
+dfab980
+do., 24 de abr. de 2022 15:22:42: 
+ treemap.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  0|0
+7b3a476
+do., 24 de abr. de 2022 15:31:19: 
+ treemap.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+ tests:  0|0
+e1c2842
+do., 24 de abr. de 2022 16:52:35: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+28a6d1e
+do., 24 de abr. de 2022 16:54:54: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+ tests:  0|0
+0f92191
+do., 24 de abr. de 2022 16:56:03: 
+ treemap.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+ tests:  0|0
+62d0e53
+do., 24 de abr. de 2022 16:56:50: 
+ treemap.c | 12 ++----------
+ 1 file changed, 2 insertions(+), 10 deletions(-)
+ tests:  0|0
+2333175
+do., 24 de abr. de 2022 16:57:23: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+ tests:  0|0
+b0ce021
+do., 24 de abr. de 2022 17:01:19: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|0
+2e0d681
+do., 24 de abr. de 2022 17:21:12: 
+ treemap.c | 35 +++++++++++++++++++++++++++++++++--
+ 1 file changed, 33 insertions(+), 2 deletions(-)
+In file included from test.c:4:0:
+treemap.c: In function 'removeNode':
+treemap.c:110:3: error: suggest parentheses around assignment used as truth value [-Werror=parentheses]
+   }else if(node=node->parent->left){
+   ^
+cc1.exe: all warnings being treated as errors
+Compilation failed
+2132bec
+do., 24 de abr. de 2022 17:22:18: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  15|5
+total_score: 30/70
+aaec85c
+do., 24 de abr. de 2022 17:23:51: 
+ treemap.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+ tests:  0|0
+e363f7b
+do., 24 de abr. de 2022 17:24:20: 
+ treemap.c | 5 -----
+ 1 file changed, 5 deletions(-)
+ tests:  15|5
+total_score: 30/70
+f693224
+>>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+Sun Apr 24 21:46:25 UTC 2022: 
+ treemap.c | Unmerged
+ treemap.c | 25 +++++++++++++++++++++++++
+ 1 file changed, 25 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function ‘removeNode’:
+treemap.c:95:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:100:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:105:1: error: version control conflict marker in file
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+ ^~~~~~~
+treemap.c:105:9: error: invalid suffix "c8177a9f0730c7b7e29d017862b63ea815e0" on integer constant
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c:115:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:123:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:125:9: error: invalid suffix "c8177a9f0730c7b7e29d017862b63ea815e0" on integer constant
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c:152:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:158:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:163:1: error: version control conflict marker in file
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+ ^~~~~~~
+treemap.c:163:9: error: invalid suffix "c8177a9f0730c7b7e29d017862b63ea815e0" on integer constant
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+treemap.c:190:1: error: version control conflict marker in file
+ <<<<<<< HEAD
+ ^~~~~~~
+treemap.c:196:1: error: version control conflict marker in file
+ =======
+ ^~~~~~~
+treemap.c:201:1: error: version control conflict marker in file
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+ ^~~~~~~
+treemap.c:201:9: error: invalid suffix "c8177a9f0730c7b7e29d017862b63ea815e0" on integer constant
+ >>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
+         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Compilation failed
+b989ff4
