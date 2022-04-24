@@ -107,13 +107,13 @@ void removeNode(TreeMap * tree, TreeNode* node) {
         node=NULL;
       }
       
-    }/*else{
+    }else{
       TreeNode* son=node->right;
       son=minimum(son);
       node->parent->left=son;
       son->parent=node->parent;
       son->right=node->right;
-    }*/
+    }
 
   }else{
     if(node->left==NULL || node->right==NULL){
