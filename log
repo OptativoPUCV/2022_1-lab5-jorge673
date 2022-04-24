@@ -1685,3 +1685,15 @@ treemap.c:235:61: note: expected 'void *' but argument is of type 'int'
 cc1.exe: all warnings being treated as errors
 Compilation failed
 7994bcb
+do., 24 de abr. de 2022 19:48:46: 
+ treemap.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+In file included from test.c:4:0:
+treemap.c: In function 'nextTreeMap':
+treemap.c:239:63: error: passing argument 2 of 'tree->lower_than' makes pointer from integer without a cast [-Werror=int-conversion]
+     if (aux->right!=NULL && tree->lower_than(aux->pair->key , tree->current->pair->key == 0)){
+                                                               ^~~~
+treemap.c:239:63: note: expected 'void *' but argument is of type 'int'
+cc1.exe: all warnings being treated as errors
+Compilation failed
+7c4433a

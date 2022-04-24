@@ -232,11 +232,15 @@ Pair * firstTreeMap(TreeMap * tree) {
 Pair * nextTreeMap(TreeMap * tree) {
   TreeNode* aux=tree->current;
   while(aux!=NULL){
-    if (aux->right!=NULL && tree->lower_than(aux->pair->key,tree->current->pair->key == 0)){
+    if(aux==tree->root){
+      tree->current=aux;
+      return aux->pair;
+    }
+    if (aux->right!=NULL && tree->lower_than(aux->pair->key , tree->current->pair->key == 0)){
 
       aux=minimum(aux->right);
       tree->current=aux;
-      
+
       return aux->pair;
 
     }else{
