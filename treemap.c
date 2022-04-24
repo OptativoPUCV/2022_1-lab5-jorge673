@@ -92,17 +92,14 @@ void removeNode(TreeMap * tree, TreeNode* node) {
 
     if(node->left==NULL || node->right==NULL){
       if (node->left!=NULL){
-<<<<<<< HEAD
         tree->root=node->left;
         node=NULL;
       }else if (node->right!=NULL){
         tree->root=node->right;
-=======
         node=node->left;
         node=NULL;
       }else if (node->right!=NULL){
         node=node->right;
->>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
         node=NULL;
       }else{
         tree->root=NULL;
@@ -112,17 +109,11 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }else{
       TreeNode* son=node->right;
       son=minimum(son);
-<<<<<<< HEAD
       node->left->parent=son;
       node->right->parent=son;
       son->left=node->left;
       son->right=node->right;
-      eraseTreeMap(tree,son->pair->key);
       tree->root=son;
-
-=======
-      
->>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
     }
 
   }else if(node==node->parent->left){
@@ -149,18 +140,15 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       TreeNode* son=node->right;
       son=minimum(son);
       son->parent=node->parent;
-<<<<<<< HEAD
       node->left->parent=son;
       node->right->parent=son;
       son->right=node->right;
       son->left=node->left;
       node->parent->right=son;
-=======
       son->right=node->right;
       son->left=node->left;
       node->parent->left=son;
       eraseTreeMap(tree,son->pair->key);
->>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
     }
 
   }else{
@@ -187,18 +175,15 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       TreeNode* son=node->right;
       son=minimum(son);
       son->parent=node->parent;
-<<<<<<< HEAD
       node->left->parent=son;
       node->right->parent=son;
       son->right=node->right;
       son->left=node->left;
       node->parent->right=son;
-=======
       son->right=node->right;
       son->left=node->left;
       node->parent->right=son;
       eraseTreeMap(tree,son->pair->key);
->>>>>>> 6427c8177a9f0730c7b7e29d017862b63ea815e0
     }
 
   }

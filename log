@@ -1627,3 +1627,9 @@ treemap.c:201:9: error: invalid suffix "c8177a9f0730c7b7e29d017862b63ea815e0" on
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Compilation failed
 b989ff4
+do., 24 de abr. de 2022 17:59:30: 
+ treemap.c | 15 ---------------
+ 1 file changed, 15 deletions(-)
+ tests:  16|4
+total_score: 35/70
+caea344
