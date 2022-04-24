@@ -100,7 +100,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
       node->right=NULL;
       node=aux;
     }else{
-      node==NULL;
+      node=NULL;
     }
     
   }
