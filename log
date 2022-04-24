@@ -537,3 +537,9 @@ do., 24 de abr. de 2022 14:44:21:
  tests:  13|5
 total_score: 20/70
 30bc411
+do., 24 de abr. de 2022 15:19:12: 
+ treemap.c | 23 ++++++++++++++++++++---
+ 1 file changed, 20 insertions(+), 3 deletions(-)
+ tests:  14|5
+total_score: 25/70
+d9e77d9
