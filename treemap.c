@@ -231,19 +231,21 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
   TreeNode* aux=tree->current;
-  if (aux->right==NULL)
-  {
-    if (aux->parent==NULL){
-      return NULL;
-    }else{
-      tree->current=aux->parent;
-      return nextTreeMap(tree);
-    }
-  }else{
-    aux=aux->right;
-    aux=minimum(aux);
+  if (aux->right!=NULL){
+
+    aux=minimum(aux->right);
     tree->current=aux;
+
     return aux->pair;
+
+  }else{
+    while(aux!=NULL){
+      aux=aux->parent;
+      if(tree->lower_than(aux->pair->key,tree->current->pair->key)==0){
+        break;
+      }
+    }
+    
   }
   
 }
