@@ -238,8 +238,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     aux=minimum(aux->right);
     tree->current=aux;
     return aux->pair;
-    
-  }else while (aux!=aux){
+
+  }else while (aux!=NULL){
 
     if(tree->root==aux)break;
     aux=aux->parent;

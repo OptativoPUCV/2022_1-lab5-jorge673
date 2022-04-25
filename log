@@ -1714,3 +1714,9 @@ treemap.c:242:19: error: self-comparison always evaluates to false [-Werror=taut
 cc1.exe: all warnings being treated as errors
 Compilation failed
 9ec68a9
+do., 24 de abr. de 2022 20:17:50: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  23|2
+total_score: 55/70
+a3f9cf4
