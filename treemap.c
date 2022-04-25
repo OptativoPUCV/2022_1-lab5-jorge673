@@ -28,6 +28,7 @@ int is_equal(TreeMap* tree, void* key1, void* key2){
 
 TreeNode * createTreeNode(void* key, void * value) {
     TreeNode * new = (TreeNode *)malloc(sizeof(TreeNode));
+    if (new == NULL) return NULL;
     new->pair = (Pair *)malloc(sizeof(Pair));
     new->pair->key = key;
     new->pair->value = value;
@@ -38,6 +39,7 @@ TreeNode * createTreeNode(void* key, void * value) {
 TreeMap * createTreeMap(int (*lower_than) (void* key1, void* key2)) {
 
   TreeMap* map=(TreeMap*)malloc(sizeof(TreeMap));
+  map->root=createTreeNode(NULL,NULL);
   map->lower_than = lower_than;
   
   return map;
